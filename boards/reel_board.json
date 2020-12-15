@@ -1,0 +1,41 @@
+{
+  "build": {
+    "arduino":{
+      "ldscript": "nrf52_xxaa.ld"
+    },
+    "core": "nRF5",
+    "cpu": "cortex-m4",
+    "f_cpu": "64000000L",
+    "mcu": "nrf52832",
+    "variant": "reel_board"
+  },
+  "connectivity": [
+    "bluetooth"
+  ],
+  "debug": {
+    "jlink_device": "nRF52840_xxAA",
+    "onboard_tools": [
+      "cmsis-dap"
+    ],
+    "svd_path": "nrf52840.svd"
+  },
+  "frameworks": [
+    "zephyr"
+  ],
+  "name": "reel_board",
+  "upload": {
+    "maximum_ram_size": 262144,
+    "maximum_size": 1048576,
+    "protocol": "jlink",
+    "protocols": [
+      "jlink",
+      "nrfjprog",
+      "blackmagic",
+      "cmsis-dap",
+      "stlink",
+      "mbed"
+    ]
+  },
+  "url": "https://www.phytec.eu/reelboard",
+  "vendor": "PHYTEC"
+}
